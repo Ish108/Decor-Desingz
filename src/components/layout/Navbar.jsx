@@ -21,14 +21,21 @@ export default function Navbar() {
         justifyContent: 'space-between',
         alignItems: 'center',
         zIndex: 100,
-        mixBlendMode: 'difference',
         color: '#fff'
       }}
     >
       <div className="logo hover-target" style={{ cursor: 'none' }}>
-        <h1 className="font-serif" style={{ margin: 0, fontSize: '1.8rem', color: '#fff', letterSpacing: '1px' }}>
-          Decore Designz.
-        </h1>
+        <img 
+          src="/logo_final.png" 
+          alt="Decore Designz Logo" 
+          style={{ 
+            height: '80px', 
+            objectFit: 'contain',
+            filter: 'invert(1) hue-rotate(180deg)',
+            mixBlendMode: 'screen',
+            marginTop: '-10px'
+          }} 
+        />
       </div>
       
       <div className="nav-links font-sans" style={{ display: 'flex', gap: '3rem', fontSize: '0.9rem', textTransform: 'uppercase', letterSpacing: '1px' }}>

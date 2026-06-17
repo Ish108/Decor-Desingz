@@ -6,6 +6,7 @@ import Cursor from './components/Cursor';
 import Navbar from './components/layout/Navbar';
 import Hero from './components/sections/Hero';
 import About from './components/sections/About';
+import ProjectGallery from './components/sections/ProjectGallery';
 import Portfolio from './components/sections/Portfolio';
 import VideoGallery from './components/sections/VideoGallery';
 import Testimonials from './components/sections/Testimonials';
@@ -57,6 +58,7 @@ function App() {
           <main>
             <Hero />
             <About />
+            <ProjectGallery />
             <Portfolio />
             <VideoGallery />
             <Testimonials />

@@ -10,7 +10,7 @@ export default function Trust() {
           muted 
           loop 
           playsInline
-          style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+          style={{ width: '100%', height: '100%', objectFit: 'contain', backgroundColor: '#000' }}
         >
           {/* Using the showcase video as the background here */}
           <source src="https://decoredesignz.com/wp-content/uploads/2026/02/09105-1.mp4" type="video/mp4" />

@@ -21,15 +21,14 @@ export default function Navbar() {
         justifyContent: 'space-between',
         alignItems: 'center',
         zIndex: 100,
-        mixBlendMode: 'difference', // Makes it invert automatically against black/white backgrounds
         color: '#fff'
       }}
     >
       <div className="logo hover-target" style={{ cursor: 'none' }}>
         <img 
-          src="https://decoredesignz.com/wp-content/uploads/2020/03/logo_final_white.png" 
+          src="/logo_v2.png" 
           alt="Decore Designz Logo" 
-          style={{ height: '70px', objectFit: 'contain' }} // Larger logo
+          style={{ height: '85px', objectFit: 'contain', filter: 'drop-shadow(0 2px 15px rgba(0,0,0,0.3))' }} 
         />
       </div>
       

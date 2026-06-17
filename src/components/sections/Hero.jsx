@@ -85,7 +85,14 @@ export default function Hero() {
             initial="hidden"
             animate="visible"
             className="font-serif" 
-            style={{ fontSize: 'clamp(3rem, 7vw, 6.5rem)', lineHeight: 1.1, marginBottom: '0.5rem', color: '#fff' }}
+            style={{ 
+              fontSize: 'clamp(3rem, 7vw, 6.5rem)', 
+              lineHeight: 1.1, 
+              marginBottom: '0.5rem', 
+              color: 'rgba(255, 255, 255, 0.5)',
+              WebkitTextStroke: '1px rgba(255, 255, 255, 0.3)',
+              textShadow: '0 8px 32px rgba(0, 0, 0, 0.4), 0 2px 8px rgba(255, 255, 255, 0.1)'
+            }}
           >
             Transforming Spaces
           </motion.h1>
@@ -97,7 +104,14 @@ export default function Hero() {
             initial="hidden"
             animate="visible"
             className="font-serif" 
-            style={{ fontSize: 'clamp(3rem, 7vw, 6.5rem)', lineHeight: 1.1, marginBottom: '1.5rem', color: '#fff' }}
+            style={{ 
+              fontSize: 'clamp(3rem, 7vw, 6.5rem)', 
+              lineHeight: 1.1, 
+              marginBottom: '1.5rem', 
+              color: 'rgba(255, 255, 255, 0.5)',
+              WebkitTextStroke: '1px rgba(255, 255, 255, 0.3)',
+              textShadow: '0 8px 32px rgba(0, 0, 0, 0.4), 0 2px 8px rgba(255, 255, 255, 0.1)'
+            }}
           >
             Into Masterpieces.
           </motion.h1>

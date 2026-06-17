@@ -84,14 +84,16 @@ export default function Hero() {
             variants={titleVariants}
             initial="hidden"
             animate="visible"
-            className="font-serif" 
+            className="font-sans" 
             style={{ 
+              fontWeight: 300,
+              letterSpacing: '-2px',
               fontSize: 'clamp(3rem, 7vw, 6.5rem)', 
               lineHeight: 1.1, 
               marginBottom: '0.5rem', 
-              color: 'rgba(255, 255, 255, 0.5)',
-              WebkitTextStroke: '1px rgba(255, 255, 255, 0.3)',
-              textShadow: '0 8px 32px rgba(0, 0, 0, 0.4), 0 2px 8px rgba(255, 255, 255, 0.1)'
+              color: 'rgba(255, 255, 255, 0.4)',
+              WebkitTextStroke: '1px rgba(255, 255, 255, 0.5)',
+              textShadow: '0 10px 40px rgba(0, 0, 0, 0.5), 0 2px 10px rgba(255, 255, 255, 0.2)'
             }}
           >
             Transforming Spaces
@@ -103,14 +105,16 @@ export default function Hero() {
             variants={titleVariants}
             initial="hidden"
             animate="visible"
-            className="font-serif" 
+            className="font-sans" 
             style={{ 
+              fontWeight: 300,
+              letterSpacing: '-2px',
               fontSize: 'clamp(3rem, 7vw, 6.5rem)', 
               lineHeight: 1.1, 
               marginBottom: '1.5rem', 
-              color: 'rgba(255, 255, 255, 0.5)',
-              WebkitTextStroke: '1px rgba(255, 255, 255, 0.3)',
-              textShadow: '0 8px 32px rgba(0, 0, 0, 0.4), 0 2px 8px rgba(255, 255, 255, 0.1)'
+              color: 'rgba(255, 255, 255, 0.4)',
+              WebkitTextStroke: '1px rgba(255, 255, 255, 0.5)',
+              textShadow: '0 10px 40px rgba(0, 0, 0, 0.5), 0 2px 10px rgba(255, 255, 255, 0.2)'
             }}
           >
             Into Masterpieces.

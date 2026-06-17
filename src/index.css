@@ -1,0 +1,108 @@
+:root {
+  --color-bg: rgba(250, 250, 250, 0.0);
+  --color-surface: rgba(255, 255, 255, 0.3);
+  --color-text: #1a1a1a;
+  --color-gray: #555555;
+  --color-accent: #c48c46; /* Premium gold/brown */
+  --font-serif: 'Playfair Display', serif;
+  --font-sans: 'Inter', sans-serif;
+  --color-border: rgba(0,0,0,0.1);
+  
+  /* Layout */
+  --container-width: 1400px;
+  --section-pad: clamp(4rem, 10vw, 8rem);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+::selection {
+  background: var(--color-accent);
+  color: var(--color-surface);
+}
+
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+body {
+  background: linear-gradient(-45deg, #fdfbfb, #e0e5ec, #dcdcdc, #f4f4f4);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+  color: var(--color-text);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  cursor: none; /* Hide default cursor */
+}
+
+a, button {
+  cursor: none; /* Hide cursor on interactive elements */
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Hide scrollbar for a cleaner look */
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+
+.hover-target {
+  /* Class to denote elements that trigger cursor expansion */
+}
+
+/* Lenis recommended css */
+html.lenis, html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-smooth iframe {
+  pointer-events: none;
+}
+
+/* Typography Utility */
+.font-serif { font-family: var(--font-serif); }
+.font-sans { font-family: var(--font-sans); }
+
+/* Layout Utility */
+.container {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.section {
+  padding: var(--section-pad) 0;
+  position: relative;
+}
+
+/* Glassmorphism for surface elements */
+[style*="var(--color-surface)"] {
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.5) !important;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.05);
+}
